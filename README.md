@@ -1,61 +1,45 @@
+STUDENT ID: 670610738
 
-# NextJS & CRXJS chrome extension boilerplate
+<div align="center">
 
-A chrome extension boilerplate using Next.js for building products and CRXJS for development.
+# 😎 Cool Mango for CMU
 
-## Why need to combine NextJS with CRXJS?
+A browser extension to improve Mango Canvas of CMU for Teacher and TA
 
-- I'm experiencing [content script injected gets delayed a lot](https://github.com/crxjs/chrome-extension-tools/issues/391) when build the products.
+[![Star][star-badge]][star]
+[![Forks][fork-badge]][members]
+[![MIT License][mit-badge]](./LICENSE)
 
-so I decided to choose NextJS for building the product instead of CRXJS.
+<img src="https://github.com/user-attachments/assets/e6d74885-2471-4724-95e3-bbe864a97836" width="100%" />
 
-## Quick Start
+</div>
 
-1. **Clone the project**:
+[star]: https://github.com/sapondanaisriwan/Cool-Mango-CMU/stargazers
+[members]: https://github.com/sapondanaisriwan/Cool-Mango-CMU/network/members
+[star-badge]: https://img.shields.io/github/stars/sapondanaisriwan/Cool-Mango-CMU
+[fork-badge]: https://img.shields.io/github/forks/sapondanaisriwan/Cool-Mango-CMU?style=flat-square
+[mit-badge]: https://img.shields.io/badge/License-MIT-green.svg
 
-```bash
-$ git clone https://github.com/sapondanaisriwan/nextjs-crxjs-chrome-extension.git
-```
+## จุดประสงค์
 
-2. **Install dependencies**:
+- เพื่อแก้ปัญหาที่พบเจอบน Mango
+- เพื่อเพิ่มความสะดวกของอาจารย์และ TA ในการตรวจงาน
 
-```bash
-$ npm install
-```
+** อาจารย์หรือ TA ที่เจอปัญหากับ Mango Canvas ที่อยากให้ผมลองแก้ กดสร้าง Feature request ได้เลยนะครับ โปรเจคนี้จะได้ทำเรื่อยๆ **
 
-## Development
+## ทำไมถึงทำโปรเจคนี้ขึ้นมา?
 
-To start development, run:
+เนื่องจากผมได้เจอปัญหาหลังจากการใช้ Mango Canvas เกี่ยวกับการให้คะแนนงานในแต่ละครั้ง เช่น
 
-```bash
-$ npm run dev
-```
+- ไม่มีการรันเลขเรียงลำดับของรายชื่อนักศึกษา ส่งผลให้การแบ่งงานกันตรวจของ TA ลำบาก
+- ขนาดของหน้าต่าง Popup ที่เล็กเกินไป ไม่สะดวกในการตรวจงานในแต่ละชิ้นงาน
 
-Alternatively, you can click the "Run" button at the bottom left corner of your VS Code.
+จากปัญหาเล็กน้อยนี้ที่สำคัญสำหรับผม ผมเลยทำโปรเจคนี้ขึ้นมาเพื่อความรวดเร็วในการตรวจงาน 💀
 
-![](https://i.imgur.com/2wAhMfn.png)
+## 🧑‍💻 Contributing
 
-## Building
+ยินดีเสมอครับที่จะได้ช่วยกันทำโปรเจค, ถ้าสนใจก็ดูวิธีขึ้นรูปโปรเจคเลยยย~~ => [CONTRIBUTING](./CONTRIBUTING.md).
 
-To build the project, use:
+## ©️ License
 
-```bash
-$ npm run build
-```
-
-Alternatively, you can click the "Run" button at the bottom left corner of your VS Code.
-
-![](https://i.imgur.com/2wAhMfn.png)
-
-## Loading Extension
-
-#### Chrome / Edge
-
-1. Open `chrome://extensions` or `edge://extensions` in your browser.
-2. Toggle on the "Developer mode".
-3. Click on "Load unpacked" button.
-4. Select the folder
-   - `nextjs-crxjs-chrome-extension/dist` for development.
-   - `nextjs-crxjs-chrome-extension/build` for building.
-
-Feel free to reach out if you have any questions or need further assistance. We appreciate your contributions! 🚀
+Code released under the [MIT](./LICENSE) license.
