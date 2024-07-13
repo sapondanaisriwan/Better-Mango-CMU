@@ -2,7 +2,7 @@ STUDENT ID: 670610738
 
 <div align="center">
 
-# 😎 Cool Mango for CMU
+# 😎 Cool Mango for CMU 🥭
 
 A browser extension to improve Mango Canvas of CMU for Teacher and TA
 
