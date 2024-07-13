@@ -1,6 +1,33 @@
-import { printLine } from './modules/print';
+import { KeyExtensionStatus, settingKey } from "../data/storage-key";
+import { injectAllChanges } from "./modules/options/optionChanges";
+import { getAllStorage, getStorage } from "./modules/utils/storage";
 
-console.log('Content script works!');
-console.log('Must reload extension for modifications to take effect.');
+let allData;
 
-printLine("Using the 'printLine' function from the Print Module");
+chrome.storage.onChanged.addListener(async (changes, namespace) => {
+  // will reload the page if key KeyExtensionStatus is changes
+  if (changes[KeyExtensionStatus]) {
+    window.location.reload();
+    return;
+  }
+
+  allData = await getAllStorage(settingKey);
+
+  if (!allData[KeyExtensionStatus]) {
+    return;
+  }
+
+  injectAllChanges(allData);
+});
+
+const main = async () => {
+  const extensionStatus = await getStorage(KeyExtensionStatus);
+  if (!extensionStatus) {
+    return;
+  }
+
+  allData = await getAllStorage(settingKey);
+  injectAllChanges(allData);
+};
+
+main();

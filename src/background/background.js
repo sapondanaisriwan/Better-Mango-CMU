@@ -1,1 +1,1 @@
-console.log('This is the background page.');
+console.log("This is the background page.");
