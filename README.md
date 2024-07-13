@@ -22,7 +22,7 @@ A browser extension to improve Mango Canvas of CMU for Teacher and TA
 
 ## จุดประสงค์
 
-- เพื่อแก้ปัญหาที่พบเจอบน Mango
+- เพื่อแก้ปัญหาที่พบเจอบน Mango Canvas ซึ่งตอนนี้เจอแค่ปัญหาเดียว
 - เพื่อเพิ่มความสะดวกของอาจารย์และ TA ในการตรวจงาน
 
 ** อาจารย์หรือ TA ที่เจอปัญหากับ Mango Canvas ที่อยากให้ผมลองแก้ กดสร้าง Feature request ได้เลยนะครับ โปรเจคนี้จะได้ทำเรื่อยๆ **
